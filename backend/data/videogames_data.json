@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "image": "https://media.wired.com/photos/633c95ef85e7a4cc2f802256/4:3/w_2132,h_1599,c_limit/Breath-of-the-Wild-Casual-Gamer-Culture.jpg",
+    "description": "An action-adventure game set in a vast open world.",
+    "reviews": []
+  },
+  {
+    "id": 2,
+    "title": "God of War",
+    "image": "https://deadline.com/wp-content/uploads/2022/03/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7-e1646683029138.jpeg?w=1024",
+    "description": "A story-driven action game with Greek mythology.",
+    "reviews": []
+  },
+  {
+    "id": 3,
+    "title": "Deep Rock Galactic",
+    "image": "https://assetsio.gnwcdn.com/deep-rock-galactic-season-2-promo-art.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+    "description": "A cooperative first-person shooter game with dwarves, darkness and danger.",
+    "reviews": []
+  }
+]
