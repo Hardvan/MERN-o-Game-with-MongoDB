@@ -17,17 +17,19 @@ function VideoGameCard({
       <div className="reviews">
         <h3>Reviews:</h3>
         {game.reviews.length > 0 ? (
-          game.reviews.map((review, index) => <p key={index}>{review}</p>)
+          game.reviews.map((review, index) => (
+            <p key={review._id || index}>{review.text}</p>
+          ))
         ) : (
           <p>No reviews yet</p>
         )}
       </div>
       <ReviewInput
-        review={reviews[game.id] || ""}
-        onReviewChange={(e) => onReviewChange(game.id, e.target.value)}
-        onAddReview={() => onAddReview(game.id)}
+        review={reviews[game._id] || ""}
+        onReviewChange={(e) => onReviewChange(game._id, e.target.value)}
+        onAddReview={() => onAddReview(game._id)}
       />
-      <button onClick={() => onDeleteAllReviews(game.id)}>
+      <button onClick={() => onDeleteAllReviews(game._id)}>
         Delete All Reviews
       </button>
     </div>

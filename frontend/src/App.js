@@ -54,7 +54,7 @@ function App() {
         .then((response) => {
           // Update the video games state with the new review
           const updatedGames = videoGames.map((game) =>
-            game.id === id ? response.data.game : game
+            game._id === id ? response.data.game : game
           );
           setVideoGames(updatedGames);
 
@@ -85,7 +85,7 @@ function App() {
       .then((response) => {
         // Update the video games state with the updated game
         const updatedGames = videoGames.map((game) =>
-          game.id === id ? response.data.game : game
+          game._id === id ? response.data.game : game
         );
         setVideoGames(updatedGames);
 
@@ -109,7 +109,7 @@ function App() {
         <div className="game-list">
           {videoGames.map((game) => (
             <VideoGameCard
-              key={game.id}
+              key={game._id}
               game={game}
               reviews={reviews}
               onReviewChange={handleReviewChange}

@@ -100,7 +100,9 @@ const seedInitialData = async () => {
         title: game.title,
         description: game.description,
         image: game.image,
-        reviews: game.reviews.map((review) => ({ text: review })),
+        reviews: game.reviews
+          ? game.reviews.map((review) => ({ text: review }))
+          : [],
       }));
 
       // Insert games into the database
